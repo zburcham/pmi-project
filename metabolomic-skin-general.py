@@ -106,11 +106,12 @@ outer_cv = LeaveOneGroupOut().split(X, y, groups=groups)
 # prints the number of folds in the outer loop
 print("Number of outer folds to perform: ", LeaveOneGroupOut().get_n_splits(X, y, groups=groups))
 
-# hyperparameter grid to test
+# hyperparameter grid to use
 #param_grid = {"max_depth": [None, 4],
 #              "max_features": ['auto', 0.2],
 #              "bootstrap": [True, False]}
 
+# param grid for testing
 param_grid = {"max_depth": [4],
               "max_features": [0.1],
               "bootstrap": [False]}
